@@ -1,0 +1,54 @@
+/* text indentation */
+.p1{
+	text-indent: 50px;
+}
+/*text transform*/
+.p2{
+	/*text-transform: capitalize;*/
+	/*text-transform: uppercase;*/
+	text-transform: lowercase;
+}
+.p3{
+	/*font-family: "Times New Roman";*/
+	font-family: Arial,Cambria,Century,Zawgyi-One;
+	/*font-weight: bold;*/
+	font-weight: 700;
+	font-style: italic;
+	font-variant: small-caps;
+}
+/*a{
+	text-decoration: none;
+	color: pink;
+}
+a:visited{
+	color: orange;
+}
+a:hover{
+	color: red;
+}*/
+.menutext{
+	text-decoration: none;
+	color: orange;
+	background-color: black;
+	padding: 5px 3px;
+}
+.menutext:hover{
+	color: yellow;
+	border-radius: 500px;
+	background-color: green;
+	font-size: 20px;
+	transition: 1s;
+}
+.menutext:active{
+	color: red;
+}
+.imgdesign{
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+}
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+	transition: 1s;
+}

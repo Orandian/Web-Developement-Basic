@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Windows History</title>
+	</head>
+	<style type="text/css">
+		nav{
+			width: auto;
+			margin: 50px;
+		}
+		ul{
+			list-style: none;
+		}
+		li{
+			float: left;
+			color: white;
+			background-color: green;
+			text-align: center;
+			width: 200px;
+			line-height: 50px
+		}
+		li:hover{
+			background-color: orange;
+		}
+		a{
+			text-decoration: none;
+		}
+		.historybar{
+			width: auto;
+			text-align: right;
+
+		}
+	</style>
+	<body>
+		<div>
+			<nav>
+				<ul>
+					<a href="widowhistory.html"><li>Home</li>
+					<a href="news.html"><li>News</li>
+					<a href="ebook.html"><li>Ebook</li>
+					<a href="music.html"><li>Music</li>
+					<a href="video.html"><li>Video</li>
+					
+				</ul>
+			</nav>
+			<div style="clear: both;"></div>
+			<div class="historybar">
+				<a href="windowhistory.html">Home</a><span> >> </span><span style="cursor: pointer;" onclick="goback()">Go Back</span>	
+				</div>
+				<div>
+					<h1 style="text-align: center">I am news Page Sir</h1>
+				</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function goback(){
+			window.history.go(-1);
+		}
+	</script>
+	</html>

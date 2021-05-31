@@ -1,0 +1,63 @@
+/*.borderstyle{
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+	/*leftup rightup rightdown leftdown*
+	border-radius: 50px 20px 50px 200px;
+}*/
+
+.bdstyle1{
+	border-style: solid;
+}
+.bdstyle2{
+	border-style: double;
+}
+.bdstyle3{
+	border-style: dotted;
+}
+.bdstyle4{
+	border-style: dashed;
+}
+.bdstyle5{
+	border-style: inset;
+}
+.bdstyle6{
+	border-style: outset;
+}
+li{
+	/*list-style-type: circle;*/
+	/*list-style-type: square;*/
+	/*list-style-type: none;*/
+	/*list-style-type: decimal-leading-zero;*/
+
+	list-style-type: decimal;
+	border:1px;
+	border-style: solid;
+	border-color: orange;
+	/*list-style-position: outside;*/
+	list-style-position: inside;
+}
+/*Attribute Selector*/
+/*[]=Array*/
+input[type="text"]{
+	border-radius: 30px;
+	color: white;
+	background-color: green;
+	width: 500px;
+}
+body{
+	background-image: url(../image/icon/icon1.png);
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	/*background-position: right;*/
+	/*background-position: left;*/
+	/*background-position: bottom;*/
+	background-position: right center;
+	/*background-position: right bottom;*/
+	/*background-position: left center;*/
+	/*background-position: left bottom;*/
+	/*background-position: right bottom;*/
+	/*background-position: right top;*/
+	background-attachment: fixed;
+	/*background-attachment: scroll;*/
+}

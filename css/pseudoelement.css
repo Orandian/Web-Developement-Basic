@@ -1,0 +1,19 @@
+.paragraph1::first-line{
+	color: blue;
+}
+/*.paragraph1::before{
+	content: "{";
+}*/
+.paragraph1::after{
+	content: "}";
+}
+
+.paragraph1::selection{
+	color: white;
+	background-color: orange;
+}
+.paragraph1::first-letter{
+	color: red;
+	font-size: 50px;
+	
+}

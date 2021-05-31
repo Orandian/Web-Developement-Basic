@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foreach Loop</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	let people = ["aung aung","maung maung","kyaw kyaw","zaw zaw","mya mya"];
+
+	// people.forEach(function(people){
+	// 	//document.write("Hello ");
+
+	// 	document.write(people + "<br/>");
+	// }); 
+
+	// people.forEach(function(person,index){
+	// 	document.write("index is = "+ index + "name is = "+ person + "<br/>");
+	// })
+
+	//arrow function (callback -> foreach)
+
+	let getpeoples = (person,index) => {
+		document.write(`${index} - ${person}` + "<br/>");
+	}
+	people.forEach(getpeoples);
+	
+</script>
+</html>

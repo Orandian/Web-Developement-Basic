@@ -1,0 +1,86 @@
+body{
+	background-image: url(../image/background/homework4bg2.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.box{
+	background-color: white;
+	margin: 150px 500px;
+	width: 300px;
+	height: 500px;
+	font-family: 'Poppins', sans-serif;
+
+	border-radius: 5px;
+}
+.table{
+	line-height: 30px;
+	margin: auto;
+}
+.tbody{
+	font-size: 12px;
+}
+input[type="text"]{
+	width: 260px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom-color: silver;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+input[type="email"]{
+	width: 260px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom-color: silver;
+	font-family: 'Poppins', sans-serif;
+	
+}
+input[type="password"]{
+	width: 260px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom-color: silver;
+	font-family: 'Poppins', sans-serif;
+}
+input[type="date"]{
+	width: 260px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom-color: silver;
+	font-family: 'Poppins', sans-serif;
+}
+button[type="submit"]{
+	width: 260px;
+	height: 25px;
+	background-color: #0066ff;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+.inputstyle:focus{
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-color: #0066ff;
+}
+.account{
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	
+}
+.sign{
+	font-size: 13px;
+}
+.foot{
+	line-height: 20px;
+	font-size: 11px;
+	margin: 40px 10px;
+}

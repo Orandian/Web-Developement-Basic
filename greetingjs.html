@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greeting JS</title>
+</head>
+<body>
+	<h1>Welcome To JavaScript</h1>
+	<h3 id="greeting">Hello Myanmar</h3>
+	<div>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7GmUKS9IVR_3uChqtzoqZqJ52uTCluimwPw&usqp=CAU
+" id="funny">
+<button onclick="document.getElementById('funny').src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7GmUKS9IVR_3uChqtzoqZqJ52uTCluimwPw&usqp=CAU';">Shame</button>
+<button onclick="document.getElementById('funny').src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIvGD1O-WSEApcmyAtuEAY-lgRKzJmXIYE-A&usqp=CAU';">Amazing</button>
+<button onclick="document.getElementById('funny').src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_zlltdnrm9m15wDuncBqqXy9gAXoBS6sZLg&usqp=CAU';">Bleh</button>
+<button onclick="document.getElementById('funny').src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTAC-XRGs3IYNMONCOAtBrf0jPUTUjBYImDZg&usqp=CAU';
+">Cry</button>
+	</div>
+<div>
+	<p id="poem"></p>
+</div>
+	</body>
+	<script type="text/javascript">
+		console.log("Hello Mandalay");//function
+		console.log(528);
+		console.log("1500");
+		//window.alert("Hello Myanmar");
+
+		//variable
+		var sayar = "Tin Htut Aung";
+		let koko = "Kyaw Zayar Ko";
+		let num1 = 1500;
+		let num2 = 528;
+
+		console.log(sayar);
+		console.log("sayar");
+		console.log('sayar');
+		console.log(koko);
+
+		console.log(num1 + num2)
+
+		//window.alert(koko);
+
+		let greeting = "Hello"
+		let city1 = "Mandalay"
+		let city2 = "Yangon"
+
+		document.getElementById("greeting").innerHTML=greeting + " " + city1 + " " + "i love Myanmar";
+		document.write("I love Mandalay");
+
+		//Special Escape Characters
+		let x = "It is U Ba\'s";
+		let y = "poem.";
+		let z = "He\'s my \"Uncle\"";
+
+		document.getElementById("poem").innerHTML=x+" "+y+" "+z;
+	</script>
+	</html>

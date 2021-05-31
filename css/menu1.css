@@ -1,0 +1,30 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+nav{
+	width: 1200px;
+	margin: 50px;
+}
+ul{
+	list-style: none;
+}
+li{
+	background-color: green;
+	border-right: 3px solid white;
+	line-height: 50px;
+	text-align: center;
+	width: 290px;
+	/*display: inline;*/
+	float: left;
+ }
+a{
+	color: white;
+	text-decoration: none;
+}
+#redcolor{
+	color: red;
+}
+#f-50{
+	font-size: 50px;
+}

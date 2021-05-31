@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project one</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<script src="https://kit.fontawesome.com/d8031fb1d0.js"></script>
+</head>
+<body>
+	<!-- Start navbar -->
+	<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+		<a href="#home" class="navbar-brand"><img src="https://wiki.videolan.org/images/Ubuntulogo.png" width="50px"><span class="mx-3">Knowledge Sharing Co.,Ltd</span></a>
+		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse justify-content-between" id="nav">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#home" class="nav-link text-light text-uppercase px-3">Home</a></li>
+				<li class="nav-item"><a href="#ebook" class="nav-link text-light text-uppercase px-3">Ebook</a></li>
+				<li class="nav-item dropdown"><a href="#" class="nav-link text-light text-uppercase px-3 dropdown-toggle" data-bs-toggle="dropdown">Software</a>
+					<div class="dropdown-menu">
+						<a href="#software" class="dropdown-item">Linux App</a>
+						<a href="#software" class="dropdown-item">Windows App</a>
+						<a href="#software" class="dropdown-item">IOS App</a>
+						<a href="#software" class="dropdown-item">Android App</a>
+					</div>
+				</li>
+				<li class="nav-item"><a href="#about" class="nav-link text-light text-uppercase px-3">About Us</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link text-light text-uppercase px-3">Contact</a></li>
+			</ul>
+			<form action="" method="POST" class="mx-3">
+				<div class="input-group">
+					<input type="text" name="search" id="search" class="form-control form-control-sm rounded-0" placeholder="search">
+					<span class="input-group-text rounded-0"><i class="fas fa-search"></i></span>
+				</div>
+			</form>
+		</div>
+	</nav>
+	<!-- end navbar -->
+	<!-- start banner -->
+	<section id="home">
+		<div class="container-fluid">
+			<div class="row bg-info align-items-center justify-content-center" style="height: 100vh;">
+				<div class="col-sm-10 text-center">
+					<h1 class="text-capitalize display-2"><span class="text-light">Knowledge Shareing</span> <span class="text-primary">Website</span></h1>
+					<h2 class="fst-italic text-light fw-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </h2>
+					<a href="#" class="btn btn-warning btn-lg rounded-0 px-4 m-3">Login Here</a>
+					<a href="#" class="btn btn-danger btn-lg rounded-0 px-4 m-3">Register Here</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end banner -->
+
+	<!-- Start Ebook Section -->
+	<section class="bg-light p-5" id="ebook">
+		<div class="contaniner-fluid">
+			<!-- start title -->
+			<div class="row">
+				<div class="col text-center">
+					<h1 class="text-warning display-3 mb-3">Ebook</h1>
+					<p class="text-secondary lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+			</div>
+			<!-- end title -->
+			<div class="row text-center">
+				<div class="col-lg-4 col-sm-10 mx-auto mb-5">
+					<i class="fas fa-desktop fa-6x text-warning mb-3"></i>
+					<h1 class="text-secondary">Technology</h1>
+					<p class="text-muted mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="btn btn-outline-warning">Learn More</a>
+				</div>
+				<div class="col-lg-4 col-sm-10 mx-auto mb-5">
+					<i class="fas fa-edit fa-6x text-warning mb-3"></i>
+					<h1 class="text-secondary">Design</h1>
+					<p class="text-muted mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="btn btn-outline-warning">Learn More</a>
+				</div>
+				<div class="col-lg-4 col-sm-10 mx-auto mb-5">
+					<i class="fas fa-shopping-basket fa-6x text-warning mb-3"></i>
+					<h1 class="text-secondary">Cook</h1>
+					<p class="text-muted mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="btn btn-outline-warning">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Ebook Section -->
+</body>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+	</html>

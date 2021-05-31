@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Writing</title>
+</head>
+<body>
+	<div>
+		<p id="display"></p>
+	</div>
+</body>
+<script type="text/javascript">
+	let getdisplay = document.getElementById("display");
+	let paragraph = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+	let i = 0;
+	let j = paragraph.length;
+
+	// function startwriting(){
+	// 	//console.log("hello");
+	// 	getdisplay.innerHTML += paragraph[i];
+	// 	i++;
+
+	// 	if(i===j){
+	// 		clearInterval(autowriting);
+	// 	}
+	// }
+	// let autowriting = setInterval(startwriting,20);
+
+	function startwriting(){
+		getdisplay.innerHTML += paragraph[i];
+		i++;
+		stopwriting(i,j);
+	}
+	function stopwriting(start,end){
+		if(start === end){
+			clearInterval(autowriting);
+		}
+	}
+	let autowriting = setInterval(startwriting,5);
+</script>
+</html>

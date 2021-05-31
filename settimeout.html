@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Time Out</title>
+</head>
+<style type="text/css">
+	.box{
+		height: 200px;
+		width: 200px;
+		padding: 20px;
+		display: inline-block;
+		border: 1px solid black;
+		background-color: silver;
+	}
+	.dragbox{
+		background-color: orange;
+		margin-bottom: 5px;
+	}
+
+</style>
+<body>
+	<button name="startint" id="startint" class="" onclick="startinterval()">Start</button>
+	<button name="stopint" id="stopint" class="" onclick="stopinterval()">Stop</button>
+	
+
+	<div>
+		<h1 id="greeting">Welcome to our site</h1>
+	</div>
+
+	<div>
+		<!-- <form action="" method="POST"> -->
+			<input type="text" name="url" id="url" class="">
+			<input type="button" name="gourl" id="gourl" value="Go URL" onclick="gourl()">
+			<input type="button" name="favurl" id="favurl" class="" value="Fav URL" onclick="favurl('https://linkedin.com')">
+		<!-- </form> -->
+	</div>
+	<hr/>
+	<div>
+		<!-- <form action="" method="POST"> -->
+			<input type="button" name="click1" id="click1" class="" value="ClickME 1" onclick="clicked(this)">
+			<input type="button" name="click2" id="click2" class="" value="ClickME 2" onclick="clicked(this)">
+			<input type="button" name="click3" id="click3" class="" value="ClickME 3" onclick="clicked(this)">
+
+			<input type="button" name="click4" id="click4" class="" onclick="click4()" value="ClickME 4">
+<!--</form> -->
+	</div>
+	<hr/>
+	<div>
+		<img name="img1" id="img1" class="" width="200px" height="200px" onmouseover="imgover(this)" onmouseout="imgout(this)">
+	</div>
+	<hr/>
+	<div class="box" ondrop="drop()" ondragover="dragover()">Box 1
+		<div class="dragbox" ondragstart="dragstart()" draggable="true">Have to cook</div>
+		<div class="dragbox" ondragstart="dragstart()" draggable="true">Have to shop</div>
+		<div class="dragbox" ondragstart="dragstart()" draggable="true">Have to study</div>
+		<div class="dragbox" ondragstart="dragstart()" draggable="true">Have to eat</div>
+	</div>
+
+	<div class="box" ondrop="drop()" ondragover="dragover()">Box 2</div>
+	<div class="box" ondrop="drop()" ondragover="dragover()">Box 3</div>
+	<div class="box" ondrop="drop()" ondragover="dragover()">Box 4</div>
+	<hr/>
+	<div id="display"></div>
+	<label for="firstname">First Name</label>
+	<input type="text" name="firstname" id="firstname" class="" onchange="valuechange(this)"><br/><br/>
+	<label>Last Name</label>
+	<input type="text" name="lastname" id="lastname" class="" onchange="valuechange(this)"><br/><br/>
+	<input type="button" name="sendinfo" id="sendinfo" class="" value="Send Info">
+	<hr/>
+	<form>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdbwDjH4CX0RYUJKuknhzsWNyq8HwFqJa0g&usqp=CAU" name="myimg" id="myimg" class="" width="100">
+	<select name = "size" id="size" class="" onchange="imgsize(this)">
+		<option selected disabled>Select</option>
+		<option value="50">Small</option>
+		<option value="250">Medium</option>
+		<option value="350">Large</option>
+	</select>
+	
+
+</body>
+	<script type="text/javascript">
+		
+		//For size
+		
+	function imgsize(t){
+		let getsize = t.value;
+		let myimg = document.getElementById("myimg");
+		// console.log(t.parentElement);
+		// console.log(t.parentElement.myimg);
+		//console.log(t.parentElement.myimg.width);
+		t.parentElement.myimg.width = getsize;
+	}
+
+	//For Value Change
+
+	function valuechange(t){
+		console.log(t);
+		let getevname = t.name;
+		console.log(getevname);
+		let getenvvalue = t.value;
+		console.log(getenvvalue);
+		let display = document.getElementById("display");
+		if(t.name === "firstname"){
+			display.innerHTML = ("First Name Change to ="+  getenvvalue);
+		}else{
+			display.innerHTML = ("Last Name Change to =" + getenvvalue);
+		}
+	}
+
+
+
+
+
+
+		//for drag and drop
+
+		let item;
+
+		function dragstart(){
+			//console.log("Drag is Starting now");
+			//console.log(event.target);
+			item = event.target;
+		}
+		function drop(){
+			console.log("I am accept dropping");
+			event.preventDefault();
+			console.log(event.preventDefault());
+
+			if(event.target.className === "box"){
+				event.target.appendChild(item);
+			}
+		}
+		function dragover(){
+			event.preventDefault();
+			console.log("over drag it working");
+		}
+
+		//for button
+
+		function mypopup(){
+			window.alert("Welcome Sir");
+		}
+		let mytimer;
+
+		function startinterval(){
+			mypopup();
+			mytimer = window.setTimeout(startinterval,2000);
+		}
+		function stopinterval(){
+			window.clearInterval(mytimer);
+		}
+
+		//for greeting
+
+		function newmsg(){
+			document.getElementById("greeting").innerHTML="Get Out Tar Gyi";
+		}
+		window.setTimeout(newmsg,3000);
+
+		//search box
+
+		function gourl(){
+			let geturl = document.getElementById("url");
+			window.location = "https://" + geturl.value;
+		}
+		function favurl(url){
+			window.location = url;
+		}
+
+		//this keyword (eventhandler)
+
+		function clicked(t){
+			t.value = "Clicked";
+		}
+
+		function click4(){
+			let myevn = event.target;
+			console.log(myevn);
+		}
+
+		//for mouse over
+
+		let getimg1 = document.getElementById("img1");
+		window.onload = function(){
+			getimg1.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdbwDjH4CX0RYUJKuknhzsWNyq8HwFqJa0g&usqp=CAU";
+		}
+
+		function imgover(t){
+			t.src = "https://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/f/5/42752295-1-f.jpg";
+		}
+
+		function imgout(t){
+			t.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdbwDjH4CX0RYUJKuknhzsWNyq8HwFqJa0g&usqp=CAU";
+		}
+
+	</script>
+	</html>

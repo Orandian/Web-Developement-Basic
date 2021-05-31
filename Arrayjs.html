@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array JS</title>
+</head>
+<body>
+	<p>Hello</p>
+	</body>
+	<script type="text/javascript">
+		//manual array
+		let j = new Array("aung aung","maung maung","kyaw kyaw");
+		console.log(j);
+
+		let k=Array("su su","nu nu","mya mya");
+		console.log(k);
+
+		let l=[1200,1300,1500,1700];
+		console.log(l);
+		console.log(l[2]);
+
+		//outside array
+		//let n = new Array();
+		let n=[];
+		n[0] = "red";
+		n[1] = "green";
+		n[2] = "black";
+		n[3] = "orange";
+		n[4] = "blue"
+		console.log(n);
+		//console.log(n[2]);
+
+		//Default function for array
+		//console.log("array to string = "+ n.toString());
+		//console.log("array to string by special char= " + n.join("*"));
+		//console.log("array value count = " + n.length);
+
+		//console.log(n.push("gold"));
+		//console.log(n)
+		
+		//Adding array data by behind
+		//n.push("gold");
+		//n.push("gray");
+		//console.log(n);
+
+		//delete array data from behind
+		//n.pop();
+		//console.log(n);
+
+		//String is charactor array in JS
+		//let aung="aung ko ko";
+		//console.log(aung[5]);
+
+		//remove data from start, beware index number
+		//n.shift();
+		//console.log(n);
+
+		//add data at front
+		//n.unshift("yellow");
+		//console.log(n);
+
+		//delete is not remote index number
+		//delete n[2];
+		//console.log(n);
+
+		//replace data 
+		//n[2]="pink",
+		//console.log(n),
+
+		//add data, by start from index number and which index want to delete
+		//n.splice(2,0,"orange","apple","mango");
+		//console.log(n);
+
+		//remove data where to how many
+		// n.splice(1,3);
+		// console.log(n);
+
+		// array combine
+		let arr1 = ["aung aung","maung maung","zaw zaw","ko ko","kyaw kyaw","kaung kaung"];
+		let arr2 = ["nu nu","mya mya","su su","hla hla"];
+		let arr3 = [1500,528];
+		//let cbm = arr1.concat(arr2);
+		//console.log(cbm);
+
+		//get number from existed array
+		//let arr4 = arr1.slice(3);
+		//console.log(arr4);
+
+		//get data from existed array by where to howmany
+		// let arr5 = arr1.slice(2,6);
+		// console.log(arr5);
+
+		//sort A to Z
+		console.log(arr1);
+		console.log(arr1.sort());
+		console.log(arr1.reverse());
+
+		let arr4 = [10,23,14,200,11,50,8,100,40,6,31,25,100];
+		console.log(arr4);
+		console.log(arr4.sort(function(a,b){return a-b;
+		}));
+		console.log(arr4.sort(function(a,b){return b-a;
+		}));
+
+		//Array as Object
+
+		//Manual Array (index + value)
+		//Associate Array ( index + key + Value)
+
+		let arr5 = [];
+		arr5["firstname"]="Ko";
+		arr5["lastname"]="Aung";
+		arr5["age"]=26;
+		arr5["address"]="Mandalay";
+		console.log(arr5);
+		console.log(arr5["address"]);
+
+		//array as object(API)
+		let arr6 = {
+			firstname : "Tin",
+			middlename : "Htut",
+			lastname : "Aung",
+			age : 27,
+		}
+		console.log(arr6);
+
+		let arr7 = {
+			"firstname" : "Tin",
+			"middlename" : "Htut",
+			"lastname" : "Aung",
+			"age" : 27,
+		}
+		console.log(arr7);
+
+		//comparison operators
+		// == equal to 
+		// === equal value and equal type
+		// != not equal
+		// !==  not equal value and not equal type
+		// > greater than
+		// < less than
+		// >= greater than or equal to
+		// <= less than or equal to
+		// ? tinary operator
+
+		let num1 = 2;
+		let num2 = 4;
+
+		document.write("equal to result=" + (num1 == num2)+ "<br/>");
+		document.write("equal value and equal type to result = "+ (num1 === num2) + "<br/>");
+		document.write("not equal result ="+ (num1 != num2) + "<br/>");
+		document.write("not equal value and not equal type value ="+ (num1 !== num2) + "<br/>");
+		document.write("greater than result ="+ (num1 > num2) + "<br/>");
+		document.write("less than result ="+ (num1 < num2) + "<br/>");
+		document.write("greater than or equal to result ="+ (num1 >= num2) + "<br/>");
+		document.write("less than or equal to result ="+ (num1 <= num2) + "<br/>");
+		document.write("tinary result ="+ (num1 > num2 ? "Yes, num1 is greater than num2" : "No, num1 is not greater than num2") + "<br/>");
+
+		//logical operators
+		&& and
+		|| or
+		 !  not
+
+
+	</script>
+	</html>

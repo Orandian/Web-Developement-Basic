@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+	<div>
+		<h1 id="mm">Myanmar</h1>
+		<h1 id="th">Thailand</h1>
+	</div>
+	<div>
+		<button name="clickme" id="clickme" class="" onclick="clickme()">Click Me</button>
+	</div>
+	<div>
+		<div id="paragraph">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<button name="hideme" id="hideme" class="">Hide Me</button>
+	</div>
+	</body>
+	<script type="text/javascript">
+		// global variable and local variable
+
+		// let x = 5; // glocal variable
+		// console.log("this is value x "+ x);
+
+		// function myfunvar(){
+		// 	let y = 10; // local variable
+		// 	let result = y + x;
+		// 	console.log("this is value of y = "+ result);
+		// }
+		// myfunvar();
+
+		// //console.log("this is external value of y = "+ y); //can't use y
+
+		// function yourfunvar(){
+		// 	let z = 100;
+		// 	let rst = z + x;
+		// 	console.log("this is value of z = "+ rst);
+		// }
+		// yourfunvar();
+
+		// string methods 
+		// let abc = "Hello Mandalay and Yangon";
+		// let efg = "I Love Myanmar";
+		//console.log(abc.length);
+
+		// console.log(abc);
+		// console.log("this is indexOf = " + abc.indexOf("an"));// start count from 0
+
+		// console.log("this is lastIndexOf = " +abc.indexOf("an"));// start count from 0 get behind
+
+		// console.log("this is search = " + abc.search("and"));//start count from 0
+
+		// console.log("this is slice = " + abc.slice(1,10));//start count from 0 (where = index, how many start from 1 bez of length)
+
+		// console.log("this is substr = " + abc.substr(1,10));//start count from 0 where = index, length (start point where)
+
+		// console.log("this is replace = " + abc.replace("Yangon","Bago"));
+		// console.log("this is toUpperCase = " + abc.toUpperCase());
+		// console.log("this is toLowerCase = " + abc.toLowerCase());
+		// console.log("this is concat = " + abc.concat(efg));
+		// console.log("this is charAt = " + abc.charAt(7));//start count from 0
+		// console.log("this is charCodeAt = " + abc.charCodeAt(9));//String to Unicode char
+
+		//Useful Style
+		document.getElementById("mm").style.color = "green";
+		document.getElementById("th").style.color = "blue";
+		document.getElementById("th").style.fontSize = "50px";
+		document.getElementById("th").style.fontFamily = "Arial";
+		//document.getElementById("th").style.display = "none";
+
+		function clickme(){
+			window.alert("Thanks for click me")
+		}
+
+		let hidemebtn = document.getElementById("hideme");
+		let pah = document.getElementById("paragraph");
+
+		hidemebtn.addEventListener("click",function(){
+			pah.style.display="none";
+		});
+	</script>
+	</html>
+
+	<!-- return or printout 
+	parameter or not (single or multi) -->

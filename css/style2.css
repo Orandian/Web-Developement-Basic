@@ -1,0 +1,31 @@
+/*Universal selector*/
+*{
+	cursor: pointer;
+}
+.firstdiv{
+	font-size: 50px;
+	cursor: pointer;
+	width: 500px;
+	height: 200px;
+	background: rgba(36,95,127,0.5);
+	/* opacity:o.5;*/
+	color:red;
+	border: 5px;
+	/*border-style:solid;*/
+	border-style:dotted;
+	/*margin:updown leftright;*/
+	margin: 100px auto;
+}
+.seconddiv{
+color: green;
+width: 500px;
+height: 500px;
+font-size: 40px;
+background-image: url(../image/background/bg.jpg);
+background-repeat: repeat;
+/*background-repeat: no-repeat;*/
+/*background-repeat: repeat-x;*/
+/*background-repeat: repeat-y;*/
+background-position: center;
+
+}
